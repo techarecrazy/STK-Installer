@@ -1,8 +1,8 @@
 [Desktop Entry]
-Version=1.0
-Comment=Trójwymiarowa zręcznościowa gra wyścigowa open-source.
-Type=Link
+Version=1.4
+Comment[pl]=Trójwymiarowa zręcznościowa gra wyścigowa open-source.
+Type=Application
 Name=SuperTuxKart
 Icon=/usr/local/games/SuperTuxKart/data/supertuxkart_128.png
-URL=/usr/local/games/SuperTuxKart/run_game.sh
+Exec=/usr/local/games/SuperTuxKart/run_game.sh
 Categories=Game;
