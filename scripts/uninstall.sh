@@ -5,7 +5,7 @@ if [[ "$reply" == "y" ]]; then
     echo "Configuring shorcuts..."
     sudo rm -f /usr/share/applications/SuperTuxKart.desktop
     echo "Deleting The Game..."
-    sudo rm -rf /usr/local/games/SuperTuxKart
+    sudo rm -rf /usr/games/SuperTuxKart
     echo "Done!"
 else
   exit 1
