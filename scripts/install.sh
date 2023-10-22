@@ -11,9 +11,9 @@ if [[ "$reply" == "y" ]]; then
     sudo rm -rf /usr/share/applications/SuperTuxKart.desktop
     sudo curl -L https://raw.githubusercontent.com/techarecrazy/STK-Installer/main/SuperTuxKart.desktop -o /usr/share/applications/SuperTuxKart.desktop
     echo "Done. Extracting The Game..."
-    sudo rm -rf /usr/local/games/SuperTuxKart
-    sudo tar -xf /tmp/stk.tar.xz -C /usr/local/games
-    sudo mv /usr/local/games/SuperTuxKart-1.4-linux-x86_64 /usr/local/games/SuperTuxKart
+    sudo rm -rf /usr/games/SuperTuxKart
+    sudo tar -xf /tmp/stk.tar.xz -C /usr/games
+    sudo mv /usr/games/SuperTuxKart-1.4-linux-x86_64 /usr/games/SuperTuxKart
     echo "Done!"
 else
   exit 1
