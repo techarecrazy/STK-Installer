@@ -3,7 +3,7 @@ read reply
 
 if [[ "$reply" == "y" ]]; then
     echo "Configuring shorcuts..."
-    rm $HOME/.local/share/applications/SuperTuxKart.desktop
+    sudo rm -f /usr/share/applications/SuperTuxKart.desktop
     echo "Deleting The Game..."
     sudo rm -rf /usr/local/games/SuperTuxKart
     echo "Done!"
