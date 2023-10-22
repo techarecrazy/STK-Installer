@@ -8,8 +8,8 @@ if [[ "$reply" == "y" ]]; then
     rm /tmp/stk.tar.xz
     curl -L https://github.com/supertuxkart/stk-code/releases/download/1.4/SuperTuxKart-1.4-linux-x86_64.tar.xz -o /tmp/stk.tar.xz
     echo "Done. Configuring shorcuts..."
-    mkdir ~/.local/share/applications
-    curl -L https://raw.githubusercontent.com/techarecrazy/STK-Installer/main/SuperTuxKart.desktop -o ~/.local/share/applications/SuperTuxKart.desktop
+    sudo rm -rf /usr/share/applications/SuperTuxKart.desktop
+    sudo curl -L https://raw.githubusercontent.com/techarecrazy/STK-Installer/main/SuperTuxKart.desktop -o /usr/share/applications/SuperTuxKart.desktop
     echo "Done. Extracting The Game..."
     sudo rm -rf /usr/local/games/SuperTuxKart
     sudo tar -xf /tmp/stk.tar.xz -C /usr/local/games
