@@ -13,7 +13,7 @@ if [[ "$reply" == "y" ]]; then
     sudo mv /usr/games/SuperTuxKart-1.4-linux-x86_64 /usr/games/SuperTuxKart
     echo "Done. Configuring shorcuts..."
     sudo rm -rf /usr/share/applications/SuperTuxKart.desktop
-    sudo cat /usr/games/SuperTuxKart/SuperTuxKart.desktop > /usr/share/applications/SuperTuxKart.desktop
+    sudo cat /usr/games/SuperTuxKart/data/supertuxkart.desktop > /usr/share/applications/SuperTuxKart.desktop
     sudo curl -L https://raw.githubusercontent.com/techarecrazy/STK-Installer/main/SuperTuxKart.desktop >> /usr/share/applications/SuperTuxKart.desktop
     echo "Done!"
 else
